@@ -1,0 +1,124 @@
+.container {
+	position: relative;
+	top: -5vh;
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.left {
+	position: relative;
+	height: 100%;
+	width: 50%;
+
+	padding-left: 5%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	background: url('../public/images/bg.png');
+}
+
+.heroimg {
+	position: relative;
+	height: 40%;
+	width: 80%;
+
+	margin-inline: auto;
+}
+
+.herosub {
+	position: relative;
+	margin-left: 10%;
+
+	text-align: center;
+
+	font-family: Fredoka;
+	font-weight: bolder;
+	font-size: 1.5rem;
+
+	color: transparent;
+	background: linear-gradient(to right, var(--lightblue), var(--lightgreen));
+	background-clip: text;
+}
+
+.register {
+	position: relative;
+	width: auto;
+	height: auto;
+
+	margin-top: 25px;
+	margin-inline: auto;
+
+	border: none;
+	background: none;
+}
+.register:hover {
+	box-shadow: 0px 22px 0px -20px var(--lightgreen);
+}
+
+.right {
+	position: relative;
+	height: 100%;
+	width: 50%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.tablet {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+
+	opacity: 75%;
+}
+
+.typewriter {
+	font-family: Fredoka;
+	font-weight: 900;
+	font-size: 3rem;
+
+	color: var(--orange);
+}
+
+@media only screen and (max-width: 1024px) {
+	.typewriter {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.container {
+		top: auto;
+		height: auto;
+
+		flex-direction: column;
+	}
+	.left {
+		width: 100vw;
+		height: 70vh;
+		padding-left: 0;
+	}
+	.herosub {
+		margin-inline: 2rem;
+	}
+
+	.right {
+		width: 100vw;
+		height: 100vw;
+	}
+
+	.tablet {
+		width: 80%;
+		height: 80%;
+	}
+}

@@ -1,0 +1,90 @@
+.container {
+	position: relative;
+	height: calc(20vh + 25px);
+	width: 100vw;
+
+	padding-top: 25px;
+	margin-bottom: 50px;
+
+	background-color: var(--darkblue);
+	border-top: 2px solid var(--lightgreen);
+
+	font-family: Fredoka;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	position: relative;
+	width: 100%;
+	height: 90%;
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright {
+	font-size: 1rem;
+	color: var(--verylightblue);
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact {
+	position: relative;
+
+	margin-top: 10px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 1.25rem;
+	color: var(--verylightblue);
+
+	gap: 10px;
+}
+
+.discord,
+.mail {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	gap: 5px;
+}
+
+.discord {
+	cursor: pointer;
+}
+
+.discord:hover {
+	color: var(--lightgreen);
+}
+
+@media only screen and (max-width: 750px) {
+	.container {
+		height: auto;
+	}
+	.logo {
+		width: 100px;
+		height: 100px;
+	}
+	.copyright {
+		flex-direction: column;
+	}
+	.contact {
+		flex-direction: column;
+	}
+}

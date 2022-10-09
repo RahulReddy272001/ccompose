@@ -1,0 +1,57 @@
+.container {
+	position: relative;
+	height: 10vh;
+	width: 100vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	z-index: 2;
+}
+
+.container > a {
+	position: relative;
+	width: auto;
+	height: auto;
+
+	padding-inline: 4rem;
+	margin-inline: auto;
+	margin-top: 50px;
+
+	padding-block: 0.75rem;
+
+	font-family: Fredoka;
+	font-weight: bolder;
+	font-size: 1.5rem;
+
+	color: black;
+	background-color: var(--verylightblue);
+	border: 2px solid var(--darkblue);
+
+	box-shadow: 0px 8px 0px -4px var(--blue);
+
+	border-radius: 0.5rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	cursor: pointer;
+}
+
+.container > a:hover {
+	box-shadow: 0px 8px 0px -4px var(--green);
+}
+
+@media only screen and (max-width: 750px) {
+	.container {
+		height: 30vh;
+		padding-top: 20px;
+		flex-direction: column;
+	}
+	.container > a {
+		margin-top: 10px;
+	}
+}

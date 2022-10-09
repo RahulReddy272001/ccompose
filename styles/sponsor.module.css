@@ -1,0 +1,117 @@
+.title {
+	width: fit-content;
+
+	margin: auto;
+
+	color: transparent;
+
+	background: linear-gradient(to right, var(--lightblue), var(--lightgreen));
+	background-clip: text;
+
+	border-bottom: 2px solid var(--blue);
+
+	font-family: Fredoka;
+	font-weight: 700;
+	font-size: 3rem;
+	text-align: center;
+
+	margin-bottom: 10px;
+}
+
+.container {
+	position: relative;
+	height: 80vh;
+	width: 80vw;
+
+	margin: auto;
+	margin-top: 25px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.row {
+	position: relative;
+	height: auto;
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.devfolio,
+.polygon,
+.filecoin,
+.solana,
+.replit,
+.taskade,
+.coolopool,
+.xyz {
+	position: relative;
+	margin-bottom: 50px;
+	--w: 300px;
+	--h: 100px;
+	width: var(--w);
+	height: var(--h);
+}
+.replit {
+	width: calc(0.8 * var(--w));
+}
+.taskade {
+	width: calc(1 * var(--w));
+	height: calc(0.8 * var(--h));
+}
+.xyz {
+	width: calc(0.8 * var(--w));
+	height: calc(0.7 * var(--h));
+}
+
+@media only screen and (max-width: 1250px) {
+	.devfolio,
+	.polygon,
+	.filecoin,
+	.solana,
+	.replit,
+	.taskade,
+	.coolopool,
+	.xyz {
+		--w: 233px;
+		--h: 70px;
+	}
+}
+
+@media only screen and (max-width: 1050px) {
+	.devfolio,
+	.polygon,
+	.filecoin,
+	.solana,
+	.replit,
+	.taskade,
+	.coolopool,
+	.xyz {
+		--w: 150px;
+		--h: 50px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.row {
+		flex-direction: column;
+	}
+	.devfolio,
+	.polygon,
+	.filecoin,
+	.solana,
+	.replit,
+	.taskade,
+	.coolopool,
+	.xyz {
+		margin-bottom: 5px;
+		--w: 233px;
+		--h: 70px;
+	}
+}

@@ -1,0 +1,44 @@
+.container {
+	position: relative;
+
+	width: 50%;
+	height: auto;
+
+	margin-top: 20px;
+
+	font-size: 1rem;
+	color: var(--lightblue);
+
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.container > span {
+	font-size: 5em;
+	font-family: Alegreya Sans SC;
+	font-weight: 700;
+
+	color: var(--verylightblue);
+	opacity: 50%;
+}
+
+.container > div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.container > div > div {
+	font-size: 5em;
+	font-family: Alegreya Sans SC;
+	font-weight: 700;
+
+	color: var(--blue);
+}
+
+@media only screen and (max-width: 1024px) {
+	.container {
+		font-size: 0.75rem;
+	}
+}
